@@ -1,0 +1,60 @@
+@media screen and (max-width: 576px) {
+    .menubar ul{
+        display: none;
+    }
+    .ham_burger{
+        display: block;
+        font-size: 69px;
+    }
+     body{
+        width: max-content;
+     }
+    .banner{
+        display: block;
+    }
+    .workout {
+        margin-left: 209px;
+        margin-top: -537px;
+    }
+    .tutorial {
+        margin-left: 0px;
+        margin-top: -334px;
+    }
+    .habit_container {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 40px;
+    }
+    .miles_content {
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+    }
+    .row_1, .row_2{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .img_3{
+        display: none;
+    }
+}
+@media screen and (min-width:576px) and (max-width:992px) {
+    body{
+        width: max-content;
+     }
+     .banner{
+        display: grid;
+        justify-content: center;
+        align-items: center;
+     }
+     .habit_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .miles_content {
+        gap: 0px;
+    }
+    .row_1 img, .row_2 img, .overlay {
+        height: 300px;
+    }
+    .team_1 {
+        width: 308.67px;
+        height: 368px;
+    }
+}

@@ -1,0 +1,403 @@
+/* font-family: "Miama", sans-serif; */
+@font-face {
+    font-family: Miama;
+    src: url(../fonts/miama/Miama.ttf);
+}
+/* font-family: "Inter", sans-serif; */
+@font-face {
+    font-family: Inter-Black;
+    src: url(../fonts/inter/Inter-Black.ttf);
+}
+@font-face {
+    font-family: Inter-Bold;
+    src: url(../fonts/inter/Inter-Bold.ttf);
+}
+@font-face {
+    font-family: Inter-ExtraBold;
+    src: url(../fonts/inter/Inter-ExtraBold.ttf);
+}
+@font-face {
+    font-family: Inter-ExtraLight;
+    src: url(../fonts/inter/Inter-ExtraLight.ttf);
+}
+@font-face {
+    font-family: Inter-Light;
+    src: url(../fonts/inter/Inter-Light.ttf);
+}
+@font-face {
+    font-family: Inter-Medium;
+    src: url(../fonts/inter/Inter-Medium.ttf);
+}
+@font-face {
+    font-family: Inter-Regular;
+    src: url(../fonts/inter/Inter-Regular.ttf);
+}
+@font-face {
+    font-family: Inter-SemiBold;
+    src: url(../fonts/inter/Inter-SemiBold.ttf);
+}
+@font-face {
+    font-family: Inter-Thin;
+    src: url(../fonts/inter/Inter-Thin.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Inter;
+    background-color: black;
+}
+/* shared styles  */
+section{
+    max-width: 1440px;
+    width: 80%;
+    margin: 0 auto;
+}
+main>section,
+footer{
+    margin-top: 100px;
+}
+.display_flex{
+    display: flex;
+}
+.primary_color{
+    color: white;
+}
+.btn_color{
+    background-color: rgb(230, 83, 60);
+}
+.common_subtitle{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+    margin: 28px 0;
+}
+.btn_primary{
+    padding: 16px 40px 16px 40px;
+    border-radius: 42px;
+    border: none;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+}
+.common_font{
+    font-size: 18px;
+    font-weight: 600;
+}
+.section_heading{
+    font-size: 3rem;
+    font-weight: 900;
+}
+/* header start  */
+header{
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    /* margin: 2rem auto 0; */
+    padding: 2rem 0 0;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+.logo h2{
+    font-weight: 700;
+    font-size: 2.25rem;
+    color: rgb(230, 83, 60);
+}
+.menu{
+    gap: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 39px;
+}
+.menu li{
+    list-style: none;
+    padding: 8px 0;
+}
+.menu li:last-child{
+    padding-right: 0;
+}
+.menu li a{
+    text-decoration: none;
+    text-transform: capitalize;
+    font-weight: 400;
+    font-size: 1.12rem;
+    color: white;
+    padding: 8px 20px 8px 20px;
+}
+.menu li a:hover{
+    border-radius: 2.87rem;
+   background-color: rgb(230, 83, 60);
+}
+.ham_burger{
+    display: none;
+}
+/* header end  */
+/* banner start  */
+.banner{
+    margin-top: 15px;
+    justify-content: space-between;
+    align-items: center;
+}
+.banner_container{
+    width: 500px;
+}
+.banner_heading{
+    font-size: 4.8rem;
+    font-weight: 900;
+    line-height: 120%;
+}
+.banner_heading span{
+    font-family: "Miama", sans-serif;
+    font-weight: 400;
+}
+.button_2{
+    background: none;
+    border: 1px solid rgb(255, 255, 255);
+    margin-left: 14px;
+}
+.banner_image img{
+    position: relative;
+}
+.workout{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(20px);
+    background: rgba(255, 255, 255, 0.1);
+    width: 160px;
+    padding: 15px 17px 15px 24px;
+    position: absolute;
+    margin-left: 233px;
+    margin-top: -437px;
+}
+.workout_text{
+    font-size: 1.75rem;
+    font-weight: 900;
+}
+.workout_subtitle{
+    margin: 0;
+}
+.tutorial{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-left: -108px;
+    margin-top: -162px;
+}
+.circle{
+    width: 40px;
+    height: 40px;
+    background: rgb(230, 83, 60);
+    border-radius: 50%;
+}
+.tutorial_text{
+    font-size: 1.5rem;
+}
+/* banner ends  */
+
+/* habit starts  */
+.container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 54px;
+}
+.common_desc{
+    width: 600px;
+    margin: 14px 0 0;
+    font-size: 14px;
+    text-align: center;
+}
+.habit_container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.habit_card{
+    margin-bottom: 0;
+}
+.habit_card img{
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50%;
+}
+.habit_card h4{
+    margin-top: 25px;
+}
+.habit_card p{
+    width: 190px;
+    margin: 6px 0 0;
+}
+/* habit ends */
+
+/* run miles start  */
+.run_miles{
+    justify-content: center;
+    align-items: center;
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+    padding: 30px 0;
+}
+.miles_content{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: start;
+    justify-items: end;
+    gap: 130px;
+}
+.run_container{
+    align-items: start;
+    margin-bottom: 0;
+}
+.desc_wrapper{
+    width: 434px;
+    text-align: left;
+    margin-bottom: 34px;
+}
+.mile_image{
+    width: 366px;
+    height: 312px;
+}
+.mile_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+}
+/* run miles ends  */
+/* training starts  */
+.training_desc{
+    text-align: left;
+    margin-bottom: 54px;
+}
+.row_1{
+    display: grid;
+    grid-template-columns: 0.8fr 1.5fr 0.7fr;
+}
+.row_2{
+    grid-template-columns: 1.3fr 0.8fr 0.9fr;
+}
+.img_1,
+.img_2,
+.img_3{
+    position: relative;
+}
+.row_1 img,
+.row_2 img{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+}
+.overlay{
+    width: 100%;
+    height: 200px;
+    opacity: 0.9;
+}
+.color_overlay{
+    background: rgba(6, 255, 210, 0.5);
+}
+.color_overlay2{
+    background: rgba(255, 0, 0, 0.3);
+}
+.color_overlay3{
+    background: rgba(0, 0, 0, 0.5);
+    opacity: 0.99;
+}
+.color_overlay4{
+    background: rgba(66, 255, 0, 0.3);
+}
+.color_overlay5{
+    background: rgba(0, 71, 255, 0.3);
+}
+.overlay_text{
+    font-weight: 500;
+    color: white;
+    position: absolute;
+    font-size: 14px;
+}
+.overlay_text1{
+    position: absolute;
+    bottom: 32px;
+    left: 30px;
+    font-weight: 500;
+    font-size: 14px;
+}
+.overlay_text2{
+    top: 27px;
+    left: 34px;
+}
+.overlay_text3{
+    top: 27px;
+    left: 268px;
+}
+/* training ends */
+/* team starts  */
+.team_1{
+    width: 326.67px;
+    height: 272px;
+}
+.team_container{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(2,1fr);
+    justify-items: center;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.1);
+    row-gap: 24px;
+    padding: 20px 10px;
+}
+.team_1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 18px;
+    opacity: 0.9;
+}
+.team_1{
+    position: relative;
+}
+.trainer{
+    color: rgba(255, 255, 255, 0.5);
+    font-weight: 400;
+}
+/* team ends  */
+/* footer starts */
+footer{
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer{
+    padding: 60px 0 30px;
+}
+.footer_wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.f_logo h2{
+    font-size: 4.37rem;
+}
+.quick{
+    justify-self: end;
+}
+.quick h4{
+    font-size: 1.5rem;
+}
+.footer_links{
+    border: none;
+    margin-top: 23px;
+}
+.footer_links li a{
+    padding: 0;
+    color: rgba(255, 255, 255, 0.5);
+    transition: border-bottom 0.3s ease-in-out;
+}
+.footer_links li a:hover{
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 0;
+    background-color: transparent;
+}
+.f_hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    margin: 70px 0 30px;
+}
+.copyright{
+    text-align: center;
+    margin-bottom: 0;
+}
+/* footer ends */
