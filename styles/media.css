@@ -1,4 +1,10 @@
 @media screen and (max-width: 576px) {
+    main>section{
+        width: max-content;
+    }
+    header{
+        width: 700px;
+    }
     .menubar ul{
         display: none;
     }
@@ -6,9 +12,6 @@
         display: block;
         font-size: 69px;
     }
-     body{
-        width: max-content;
-     }
     .banner{
         display: block;
     }
@@ -20,19 +23,36 @@
         margin-left: 0px;
         margin-top: -334px;
     }
-    .habit_container {
+    .habit_container,
+    .team_container {
         grid-template-columns: repeat(1, 1fr);
+    }
+    .habit_container{
         gap: 40px;
+    }
+    .run_miles{
+        width: 600px;
+        margin-left: 60px;
     }
     .miles_content {
         grid-template-columns: repeat(1, 1fr);
-        justify-items: start;
+        justify-items: center;
+        gap: 50px;
     }
     .row_1, .row_2{
         grid-template-columns: repeat(2, 1fr);
     }
     .img_3{
         display: none;
+    }
+    .exercise_images,
+    .team_container,
+    .run_container{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .common_desc{
+        width: 47%;
     }
 }
 @media screen and (min-width:576px) and (max-width:992px) {
