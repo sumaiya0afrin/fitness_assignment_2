@@ -64,7 +64,16 @@
         margin: 0 auto;
     }
     .common_desc{
-        width: 47%;
+        width: 81%;
+    }
+    .calculator {
+        width: max-content;
+    }
+    .calculator_content{
+        display: block;
+    }
+    .chart{
+        margin-bottom: 60px;
     }
     .team_1 {
         width: 500px;
@@ -129,7 +138,7 @@
     }
     .desc_wrapper {
     width: 256px;
-}
+    }
 .mile_image {
     width: 256px;
     height: 340px;
@@ -141,6 +150,12 @@
     top: 135px;
     left: 30px;
 }
+.calculator_content{
+    display: block;
+}
+.chart{
+    margin-bottom: 60px;
+}
 .footer_wrapper {
     grid-template-columns: repeat(1, 1fr);
 }
@@ -151,4 +166,7 @@
 footer .desc_wrapper{
     width: 434px;
 }
+}
+@media screen and (min-width:992px) and (max-width:1200px){
+
 }
