@@ -1,3 +1,4 @@
+/* small device  */
 @media screen and (max-width: 576px) {
     main>section{
         width: max-content;
@@ -29,6 +30,7 @@
         margin-top: -334px;
     }
     .habit_container,
+    .service_card,
     .team_container,
     .footer_wrapper {
         grid-template-columns: repeat(1, 1fr);
@@ -57,6 +59,7 @@
     .img_3{
         display: none;
     }
+    .container,
     .exercise_images,
     .team_container,
     .run_container{
@@ -65,6 +68,17 @@
     }
     .common_desc{
         width: 81%;
+        gap: 80px;
+    }
+    .service_card{
+        gap: 80px;
+        margin-top: 120px;
+    }
+    .service h2 {
+        text-align: center;
+    }
+    .service_1{
+        margin: 0 auto;
     }
     .calculator {
         width: max-content;
@@ -89,13 +103,11 @@
         left: 131px;
     }
     footer{
-        width: 710px;
+        width: 740px;
     }
 }
+/* medium device  */
 @media screen and (min-width:576px) and (max-width:992px) {
-    /* body{
-        width: max-content;
-     } */
      .common_desc {
     width: 500px;
     }
@@ -125,12 +137,16 @@
     .banner_image{
         margin-top: 60px;
     }
+    .service_card,
      .habit_container {
         grid-template-columns: repeat(2, 1fr);
-        row-gap: 40px;
+        row-gap: 80px;
     }
     .miles_content {
         gap: 0px;
+    }
+    .service h2 {
+        text-align: center;
     }
     .team_1 {
         width: 180.67px;
@@ -139,10 +155,10 @@
     .desc_wrapper {
     width: 256px;
     }
-.mile_image {
+    .mile_image {
     width: 256px;
     height: 340px;
-}
+    }
 .run_miles {
     padding: 30px 30px;
 }
@@ -167,6 +183,77 @@ footer .desc_wrapper{
     width: 434px;
 }
 }
+/* large device  */
 @media screen and (min-width:992px) and (max-width:1200px){
-
+    .common_desc {
+        width: 500px;
+        }
+        .menu{
+            gap: 0;
+        }
+        .menu li a {
+            padding: 8px 15px 8px 15px;
+        }
+         .banner{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+         }
+         .banner_image{
+             justify-self: center;
+         }
+         .workout {
+            margin-left: 196px;
+            margin-top: -513px;
+        }
+        .tutorial {
+            margin-left: -57px;
+            margin-top: -234px;
+        }
+         .banner,
+        .banner_image{
+            margin-top: 60px;
+        }
+        .service_card,
+         .habit_container {
+            grid-template-columns: repeat(2, 1fr);
+            row-gap: 80px;
+        }
+        .miles_content {
+            gap: 0px;
+        }
+        .team_1 {
+            width: 242.67px;
+            height: 255px;
+        }
+        .desc_wrapper {
+        width: 256px;
+        }
+        .mile_image {
+        width: 256px;
+        height: 340px;
+        }
+    .run_miles {
+        padding: 30px 30px;
+    }
+    .overlay_text3 {
+        top: 135px;
+        left: 30px;
+    }
+    .calculator_content{
+        display: block;
+    }
+    .chart{
+        margin-bottom: 60px;
+    }
+    .footer_wrapper {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .quick_wrapper {
+        justify-content: start;
+        gap: 200px;
+    }
+    footer .desc_wrapper{
+        width: 434px;
+    }
 }
