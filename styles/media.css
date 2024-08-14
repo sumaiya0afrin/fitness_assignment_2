@@ -10,9 +10,14 @@
     }
     .ham_burger{
         display: block;
-        font-size: 69px;
+        font-size: 30px;
     }
-    .banner{
+    .banner,
+    .banner_image{
+        margin-top: 60px;
+    }
+    .banner,
+    .quick_wrapper{
         display: block;
     }
     .workout {
@@ -24,7 +29,8 @@
         margin-top: -334px;
     }
     .habit_container,
-    .team_container {
+    .team_container,
+    .footer_wrapper {
         grid-template-columns: repeat(1, 1fr);
     }
     .habit_container{
@@ -38,6 +44,12 @@
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
         gap: 50px;
+    }
+    .miles_content button{
+        width: 100%;
+    }
+    .mile_image {
+        width: 485px;
     }
     .row_1, .row_2{
         grid-template-columns: repeat(2, 1fr);
@@ -54,27 +66,89 @@
     .common_desc{
         width: 47%;
     }
+    .team_1 {
+        width: 500px;
+        height: 400px;
+    }
+    .gym_trainer{
+        display: none;
+    }
+    .gym_trainer5{
+        grid-row: 2/3;
+    }
+    .overlay_text3 {
+        left: 131px;
+    }
+    footer{
+        width: 710px;
+    }
 }
 @media screen and (min-width:576px) and (max-width:992px) {
-    body{
+    /* body{
         width: max-content;
-     }
+     } */
+     .common_desc {
+    width: 500px;
+    }
+    .menu{
+        gap: 0;
+    }
+    .menu li a {
+        padding: 8px 15px 8px 15px;
+    }
      .banner{
         display: grid;
         justify-content: center;
         align-items: center;
      }
+     .banner_image{
+         justify-self: center;
+     }
+     .workout {
+        margin-left: 196px;
+        margin-top: -513px;
+    }
+    .tutorial {
+        margin-left: -57px;
+        margin-top: -234px;
+    }
+     .banner,
+    .banner_image{
+        margin-top: 60px;
+    }
      .habit_container {
         grid-template-columns: repeat(2, 1fr);
+        row-gap: 40px;
     }
     .miles_content {
         gap: 0px;
     }
-    .row_1 img, .row_2 img, .overlay {
-        height: 300px;
-    }
     .team_1 {
-        width: 308.67px;
-        height: 368px;
+        width: 180.67px;
+        height: 255px;
     }
+    .desc_wrapper {
+    width: 256px;
+}
+.mile_image {
+    width: 256px;
+    height: 340px;
+}
+.run_miles {
+    padding: 30px 30px;
+}
+.overlay_text3 {
+    top: 135px;
+    left: 30px;
+}
+.footer_wrapper {
+    grid-template-columns: repeat(1, 1fr);
+}
+.quick_wrapper {
+    justify-content: start;
+    gap: 200px;
+}
+footer .desc_wrapper{
+    width: 434px;
+}
 }

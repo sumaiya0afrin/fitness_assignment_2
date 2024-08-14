@@ -329,6 +329,18 @@ header{
     left: 268px;
 }
 /* training ends */
+/* calculator starts  */
+.calculator{
+    width: 100%;
+}
+.calculator_wrapper{
+    width: 60%;
+    margin: 0 auto;
+}
+.calculator_container{
+    background: rgb(34, 34, 34); 
+}
+/* calculator ends */
 /* team starts  */
 .team_1{
     width: 326.67px;
@@ -367,7 +379,12 @@ footer{
 }
 .footer_wrapper{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+}
+.quick_wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 .f_logo h2{
     font-size: 4.37rem;
