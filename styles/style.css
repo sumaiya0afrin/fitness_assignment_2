@@ -73,7 +73,7 @@ footer{
 }
 .common_subtitle{
     color: rgba(255, 255, 255, 0.5);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 400;
     line-height: 24px;
     text-align: left;
@@ -87,7 +87,7 @@ footer{
     cursor: pointer;
 }
 .common_font{
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 600;
 }
 .section_heading{
@@ -97,7 +97,6 @@ footer{
 /* header start  */
 header{
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
-    /* margin: 2rem auto 0; */
     padding: 2rem 0 0;
 }
 .navbar{
@@ -129,7 +128,8 @@ header{
     color: white;
     padding: 8px 20px 8px 20px;
 }
-.menu li a:hover{
+.menu li a:hover,
+.menu li a.active{
     border-radius: 2.87rem;
    background-color: rgb(230, 83, 60);
 }
@@ -198,7 +198,6 @@ header{
     font-size: 1.5rem;
 }
 /* banner ends  */
-
 /* habit starts  */
 .container{
     flex-direction: column;
@@ -209,7 +208,7 @@ header{
 .common_desc{
     width: 600px;
     margin: 14px 0 0;
-    font-size: 14px;
+    font-size: 0.875rem;
     text-align: center;
 }
 .habit_container{
@@ -231,7 +230,6 @@ header{
     margin: 6px 0 0;
 }
 /* habit ends */
-
 /* run miles start  */
 .run_miles{
     justify-content: center;
@@ -315,14 +313,14 @@ header{
     font-weight: 500;
     color: white;
     position: absolute;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .overlay_text1{
     position: absolute;
     bottom: 32px;
     left: 30px;
     font-weight: 500;
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 .overlay_text2{
     top: 27px;
@@ -333,6 +331,42 @@ header{
     left: 268px;
 }
 /* training ends */
+/* clients starts  */
+.service_1{
+    background-color:  rgba(255, 255, 255, 0.1);
+    border-radius: 18px;
+    padding: 30px;
+}
+.service_1>p{
+    text-align: left;
+    width: auto;
+    margin-bottom: 15px;
+}
+.service_card{
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    margin-top: 120px;
+}
+.service_icon{
+    margin-top: -88px;
+    margin-left: 4px;
+}
+.service_card i{
+    font-size: 4rem;
+    color: rgb(54, 51, 51);
+    background-color: white;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+.card_head{
+    font-size: 1.75rem;
+    margin-top: 30px;
+}
+/* service ends */
 /* calculator starts  */
 .calculator{
     width: 100%;
@@ -411,45 +445,6 @@ option{
     font-weight: 400;
 }
 /* team ends  */
-/* clients starts  */
-.service_1{
-    background-color:  rgba(255, 255, 255, 0.1);
-    border-radius: 18px;
-    padding: 30px;
-}
-.service_1>p{
-    text-align: left;
-    width: auto;
-    margin-bottom: 15px;
-}
-.service_card{
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px;
-    margin-top: 120px;
-}
-.service_icon{
-    margin-top: -88px;
-    margin-left: 4px;
-}
-.service_card i{
-    font-size: 4rem;
-    color: rgb(54, 51, 51);
-    background-color: white;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 10px;
-}
-.card_head{
-    font-size: 1.75rem;
-    margin-top: 30px;
-}
-
-
-
-/* clients ends */
 /* footer starts */
 footer{
     background: rgba(255, 255, 255, 0.1);
