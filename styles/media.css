@@ -1,33 +1,63 @@
 /* small device  */
 @media screen and (max-width: 576px) {
-    main>section{
-        width: max-content;
+    main>section, footer {
+        margin-top: 40px;
     }
-    header{
-        width: 700px;
+    .section_heading{
+        font-size: 1.5rem;
+    }
+    .card_head,
+    .quick h4 {
+        font-size: 1.25rem;
+    }
+    .common_subtitle {
+        font-size: 0.8rem;
     }
     .menubar ul{
         display: none;
     }
     .ham_burger{
         display: block;
-        font-size: 30px;
+        font-size: 20px;
     }
     .banner,
     .banner_image{
-        margin-top: 60px;
+        margin-top: 30px;
+    }
+    .banner_image img {
+        width: 238px;
+    }
+    .banner_container {
+        width: auto;
+    }
+    .banner_heading {
+        font-size: 2.8rem;
     }
     .banner,
     .quick_wrapper{
         display: block;
     }
+    .banner_btn{
+        display: flex;
+    }
+   .banner .btn_primary {
+        padding: 16px 12px 16px 12px;
+    }
+    .banner .common_font{
+        font-size: small;
+    }
     .workout {
-        margin-left: 209px;
-        margin-top: -537px;
+        width: 136px;
+        padding: 15px 0px 15px 11px;
+        margin-left: 132px;
+        margin-top: -367px;
+    }
+    .workout_text {
+        font-size: 1.25rem;
     }
     .tutorial {
-        margin-left: 0px;
-        margin-top: -334px;
+        margin-left: -17px;
+        margin-top: -249px;
     }
     .habit_container,
     .service_card,
@@ -38,20 +68,20 @@
     .habit_container{
         gap: 40px;
     }
-    .run_miles{
-        width: 600px;
-        margin-left: 60px;
+    .miles_content .run_container{
+        padding: 0 25px;
     }
     .miles_content {
         grid-template-columns: repeat(1, 1fr);
         justify-items: center;
-        gap: 50px;
+        gap: 30px;
     }
     .miles_content button{
         width: 100%;
     }
     .mile_image {
-        width: 485px;
+        width: 203px;
+        height: 170px;
     }
     .row_1, .row_2{
         grid-template-columns: repeat(2, 1fr);
@@ -59,20 +89,13 @@
     .img_3{
         display: none;
     }
-    .container,
-    .exercise_images,
-    .team_container,
-    .run_container{
-        width: 80%;
-        margin: 0 auto;
-    }
     .common_desc{
         width: 81%;
         gap: 80px;
     }
     .service_card{
         gap: 80px;
-        margin-top: 120px;
+        margin-top: 90px;
     }
     .service h2 {
         text-align: center;
@@ -80,18 +103,32 @@
     .service_1{
         margin: 0 auto;
     }
-    .calculator {
-        width: max-content;
+    .calculator_wrapper {
+        width: 80%;
+        margin: 0 auto;
     }
     .calculator_content{
         display: block;
     }
+    .common_font,
+    .calculator h4 {
+        font-size: 1rem;
+    }
+    .training_desc {
+        margin-bottom: 23px;
+    }
     .chart{
         margin-bottom: 60px;
     }
+    form input, select{
+        padding: 12px 28px;
+        width: 56%;
+    }
+    select{
+        width: 100%;
+    }
     .team_1 {
-        width: 500px;
-        height: 400px;
+        width: 225px;
     }
     .gym_trainer{
         display: none;
@@ -100,10 +137,10 @@
         grid-row: 2/3;
     }
     .overlay_text3 {
-        left: 131px;
+        left: 47px;
     }
-    footer{
-        width: 740px;
+    .f_logo h2 {
+        font-size: 3rem;
     }
 }
 /* medium device  */
